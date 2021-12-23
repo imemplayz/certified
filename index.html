@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <title>CERTIFIED</title>
+</head>
+
+<body class="h-100">
+  <div class="bg-gray-200 py-4 w-full px-20 shadow-lg flex justify-between items-center">
+     <h1 class="text-gray-700 font-bold">CERTIFIED<span class="text-indigo-500">.</span></h1>
+     <div class="flex justify-between space-x-5">
+       <button class="bg-indigo-500 text-white rounded-xl px-4 py-1 font-bold hover:bg-indigo-700">Paper</button>
+       <button class="bg-indigo-500 text-white rounded-xl px-4 py-1 font-bold hover:bg-indigo-700">Card</button>
+     </div>
+  </div>
+  <div class="w-full flex justify-center items-start space-x-5">
+    <div class="flex justify-center items-center">
+<div >
+  <h3 class="bg-indigo-500 text-white rounded-t font-bold py-2 px-4 mt-6">
+    Real Life Information
+  </h3>
+  <div class="flex justify-center">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="first name">
+          First name
+        </label>
+        <input id="firstNameInput" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="first name" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+          Last name
+        </label>
+        <input id="lastNameInput" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="last name" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+          Birth date
+        </label>
+        <input id="birthDateInput" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="birth date" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+          Guaridan full name (for children)
+        </label>
+        <input id="guardianInput" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="guaridan" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+          Effective date
+        </label>
+        <input id="effectiveDateInput" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="effective date" />
+      </div>
+      <div class="flex items-center justify-between">
+        <button class="
+              bg-indigo-500
+              hover:bg-indigo-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded
+              focus:outline-none focus:shadow-outline
+            " type="button" onclick="preview()">
+          Preview
+        </button>
+      </div>
+    </form>
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="
+              block
+              text-gray-700 text-sm
+              font-bold
+              mb-2
+              flex
+              justify-end
+            " for="first name">
+          الإسم
+        </label>
+        <input id="firstNameInputArabic" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+              placeholder: flex
+              placeholder: justify-end
+            " id="username" type="text" placeholder="الإسم" />
+      </div>
+      <div class="mb-4">
+        <label class="
+              block
+              text-gray-700 text-sm
+              font-bold
+              mb-2
+              flex
+              justify-end
+            " for="last name">
+          اللقب
+        </label>
+        <input id="lastNameInputArabic" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="اللقب" />
+      </div>
+      <div class="mb-4">
+        <label class="
+              block
+              text-gray-700 text-sm
+              font-bold
+              mb-2
+              flex
+              justify-end
+            " for="last name">
+          إسم و لقب الولي
+        </label>
+        <input id="guardianInputArabic" class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline focus:border-indigo-500
+            " id="username" type="text" placeholder="إسم و لقب الولي" />
+      </div>
+    </form>
+  </div>
+  <div>
+      <h3 class="bg-indigo-500 text-white rounded-t font-bold py-2 px-4 mt-6">
+      Electronic Stamp Information
+      </h3>
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="first name">
+            First name
+          </label>
+          <input id="firstNameInput" class="
+                shadow
+                appearance-none
+                border
+                rounded
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline focus:border-indigo-500
+              " id="username" type="text" placeholder="first name" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+            Last name
+          </label>
+          <input id="lastNameInput" class="
+                shadow
+                appearance-none
+                border
+                rounded
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline focus:border-indigo-500
+              " id="username" type="text" placeholder="last name" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+            Birth date
+          </label>
+          <input id="birthDateInput" class="
+                shadow
+                appearance-none
+                border
+                rounded
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline focus:border-indigo-500
+              " id="username" type="text" placeholder="birth date" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+            Guaridan full name (for children)
+          </label>
+          <input id="guardianInput" class="
+                shadow
+                appearance-none
+                border
+                rounded
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline focus:border-indigo-500
+              " id="username" type="text" placeholder="guaridan" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
+            Effective date
+          </label>
+          <input id="effectiveDateInput" class="
+                shadow
+                appearance-none
+                border
+                rounded
+                w-full
+                py-2
+                px-3
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline focus:border-indigo-500
+              " id="username" type="text" placeholder="effective date" />
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="
+                bg-indigo-500
+                hover:bg-indigo-700
+                text-white
+                font-bold
+                py-2
+                px-4
+                rounded
+                focus:outline-none focus:shadow-outline
+              " type="button" onclick="preview()">
+            Preview
+          </button>
+          <button class="
+                bg-indigo-500
+                hover:bg-indigo-700
+                text-white
+                font-bold
+                py-2
+                px-4
+                rounded
+                focus:outline-none focus:shadow-outline
+              " type="button" onclick="Print();">
+            Print
+          </button>
+        </div>
+      </form>
+  </div>
+
+    </div>
+    </div>
+    <div class="pt-6 pb-8 mb-4 h-100 w-[900px]">
+      <h3 class="bg-indigo-500 text-white rounded-t font-bold py-2 px-4">
+        Output
+      </h3>
+      <div style="font-family: Arial, Helvetica, sans-serif" id="printDiv"
+        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div style="
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 30px;
+              margin-left: 75px;
+            ">
+          <div style="display: flex; flex-direction: column; align-items: center">
+            <img style="margin-bottom: 10px; margin-top: 10px" src="img/logoLeft.png" width="100px" height="100px" />
+            <p style="font-weight: bold; margin-bottom: 5px">وزارة الصحة</p>
+            <p style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: bold;
+                  margin-top: 0;
+                ">
+              Ministry of health
+            </p>
+          </div>
+          <div style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: -20px;
+              ">
+            <img style="margin-bottom: 25px; height: 60px; width: 100px" src="img/flag.png" />
+            <p style="font-weight: bold; margin-bottom: 5px">
+              الجمهورية التونسية
+            </p>
+            <p style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: bold;
+                  margin-top: 0;
+                ">
+              Republic of tunisia
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center">
+            <img style="margin-bottom: 15px; margin-top: 10px" src="img/logoRight.png" width="100px" height="100px" />
+            <p style="font-weight: bold; margin-bottom: 5px">
+              وزارة تكنولوجيات الاتصال
+            </p>
+            <p style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: bold;
+                  text-align: center;
+                  margin-top: 0;
+                ">
+              Ministry of communication<br />Technologies
+            </p>
+          </div>
+        </div>
+        <div style="
+              margin-bottom: 30px;
+              text-align: center;
+              font-weight: bold;
+              font-family: Arial, Helvetica, sans-serif;
+            " class="headerTitle">
+          <h2>جواز التلقيح كوفيد -19</h2>
+          <h1>VACCINE PASSPORT COVID-19</h1>
+          <h4>Pass Id: <span id="passID"></span></h4>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-left: 50px; margin-right: 50px">
+          <!-- english -->
+          <div>
+           <p style="
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin-bottom: 15px;
+              ">
+            Full Name: <span style="font-weight: normal" id="firstName"></span><span style="font-weight: normal"
+              id="lastName"></span>
+          </p>
+          <p style="
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin-bottom: 15px;
+              ">
+            Date of Birth:
+            <span style="font-weight: normal" id="birthDate"></span>
+          </p>
+          <p style="
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin-bottom: 15px;
+              ">
+            Guardian Full Name (for children):
+            <span style="font-weight: normal" id="guardian"></span>
+          </p>
+          <p style="
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin-bottom: 80px;
+              ">
+            Effective Date:
+            <span style="font-weight: normal" id="effectiveDate"></span>
+          </p>
+          <p style="
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin-bottom: 10px;
+              ">
+            Electronic stamp:
+            <span style="font-weight: normal" id="effectiveDate"></span>
+          </p>
+          </div>
+          <!--  -->
+          <!-- arabic -->
+          <div>
+            <p style="
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-weight: bold;
+                 margin-bottom: 15px;
+                 display: flex;
+                 justify-content: end;
+               ">
+               <span style="font-weight: normal" id="nameArabic"></span> 
+               &nbsp:الإسم و اللقب
+           </p>
+           <p style="
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-weight: bold;
+                 margin-bottom: 15px;
+                 display: flex;
+                 justify-content: end;
+               ">
+                <span style="font-weight: normal" id="birthDateArabic"></span>
+                &nbsp:تاريخ الولادة
+           </p>
+           <p style="
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-weight: bold;
+                 margin-bottom: 15px;
+                 display: flex;
+                 justify-content: end;
+               ">
+               <span style="font-weight: normal" id="guardianArabic"></span>
+               &nbsp:(إسم و لقب الولي (بالنسبة للقصر
+           </p>
+           <p style="
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-weight: bold;
+                 margin-bottom: 80px;
+                 display: flex;
+                 justify-content: end;
+               ">
+               <span style="font-weight: normal" id="effectiveDateArabic"></span>
+               &nbsp:تاريخ النفاذ
+           </p>
+           <p style="
+                 font-family: Arial, Helvetica, sans-serif;
+                 font-weight: bold;
+                 margin-bottom: 10px;
+                 display: flex;
+                 justify-content: end;
+               ">
+             :الختم المرني
+           </p>
+           <div style="margin-right: 220px;">
+             <img src="img/2d-doc.png" alt="" style="height: 40px; width: 180px; display: block; margin-left: auto; margin-right: auto;">
+             <img src="img/datamatrix.png" alt="" style="height: 250px; width: 250px;">
+           </div>
+           </div>
+           <!--  -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
