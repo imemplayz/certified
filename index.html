@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>QRScanner</title>
-    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
-  </head>
+  <head>...</head>
   <body>
-    <div id="reader" width="600px"></div>
-    <script type="text/javascript">
-      const html5QrCode = new Html5Qrcode("reader");
-const qrCodeSuccessCallback = (decodedText, decodedResult) => {
-    /* handle success */
-};
-const config = { fps: 10, qrbox: { width: 250, height: 250 } };
-
-// If you want to prefer back camera
-html5QrCode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
-    </script>
+    <video id="video" width="640" height="480" autoplay></video>
+    <!-- Dont for get to link your JavaScript -->
+    <script src="script.js" async></script>
   </body>
 </html>
