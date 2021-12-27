@@ -1,0 +1,30 @@
+.notifications{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    overflow: hidden;
+}
+.noti{
+    position: relative;
+    color: white;
+    width: fit-content;
+    height: 30px;
+    padding: 7px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.noti i{
+    margin-bottom: 4px;
+}
+
+.hidden{
+transform: translateX(400px);
+transition: all 0.5s ease-in-out;
+}
