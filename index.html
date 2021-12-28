@@ -128,6 +128,18 @@
             " type="button" onclick="preview()">
           Preview
         </button>
+        <button id="printBtn" class="
+                bg-indigo-500
+                hover:bg-indigo-700
+                text-white
+                font-bold
+                py-2
+                px-4
+                rounded
+                focus:outline-none focus:shadow-outline
+              " type="button" disabled onclick="Print();">
+            Print
+          </button>
       </div>
     </form>
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -206,124 +218,6 @@
             " id="username" type="text" placeholder="إسم و لقب الولي" />
       </div>
     </form>
-  </div>
-  <div>
-      <h3 class="bg-indigo-500 text-white rounded-t font-bold py-2 px-4 mt-6">
-      Electronic Stamp Information
-      </h3>
-      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="first name">
-            First name
-          </label>
-          <input id="firstNameInput" class="
-                shadow
-                appearance-none
-                border
-                rounded
-                w-full
-                py-2
-                px-3
-                text-gray-700
-                leading-tight
-                focus:outline-none focus:shadow-outline focus:border-indigo-500
-              " id="username" type="text" placeholder="first name" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
-            Last name
-          </label>
-          <input id="lastNameInput" class="
-                shadow
-                appearance-none
-                border
-                rounded
-                w-full
-                py-2
-                px-3
-                text-gray-700
-                leading-tight
-                focus:outline-none focus:shadow-outline focus:border-indigo-500
-              " id="username" type="text" placeholder="last name" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
-            Birth date
-          </label>
-          <input id="birthDateInput" class="
-                shadow
-                appearance-none
-                border
-                rounded
-                w-full
-                py-2
-                px-3
-                text-gray-700
-                leading-tight
-                focus:outline-none focus:shadow-outline focus:border-indigo-500
-              " id="username" type="text" placeholder="birth date" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
-            Guaridan full name (for children)
-          </label>
-          <input id="guardianInput" class="
-                shadow
-                appearance-none
-                border
-                rounded
-                w-full
-                py-2
-                px-3
-                text-gray-700
-                leading-tight
-                focus:outline-none focus:shadow-outline focus:border-indigo-500
-              " id="username" type="text" placeholder="guaridan" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="last name">
-            Effective date
-          </label>
-          <input id="effectiveDateInput" class="
-                shadow
-                appearance-none
-                border
-                rounded
-                w-full
-                py-2
-                px-3
-                text-gray-700
-                leading-tight
-                focus:outline-none focus:shadow-outline focus:border-indigo-500
-              " id="username" type="text" placeholder="effective date" />
-        </div>
-        <div class="flex items-center justify-between">
-          <button class="
-                bg-indigo-500
-                hover:bg-indigo-700
-                text-white
-                font-bold
-                py-2
-                px-4
-                rounded
-                focus:outline-none focus:shadow-outline
-              " type="button" onclick="preview()">
-            Preview
-          </button>
-          <button id="printBtn" class="
-                bg-indigo-500
-                hover:bg-indigo-700
-                text-white
-                font-bold
-                py-2
-                px-4
-                rounded
-                focus:outline-none focus:shadow-outline
-              " type="button" disabled onclick="Print();">
-            Print
-          </button>
-        </div>
-      </form>
   </div>
 
     </div>
@@ -487,13 +381,13 @@
                  display: flex;
                  justify-content: end;
                ">
-             :الختم المرني
+             :الختم المرئي
            </p>
            </div>
           </div>
            <div>
              <img src="img/2d-doc.png" alt="" style="height: 40px; width: 180px; display: block; margin-left: auto; margin-right: auto;">
-             <img src="img/datamatrix.png" alt="" style="height: 250px; width: 250px; display: block; margin-left: auto; margin-right: auto;">
+             <img id="QR" src="img/datamatrix.png" alt="" style="height: 250px; width: 250px; display: block; margin-left: auto; margin-right: auto;">
            </div>
            <!--  -->
           

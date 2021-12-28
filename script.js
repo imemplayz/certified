@@ -22,6 +22,7 @@ function preview() {
     var guardianArabic = document.getElementById("guardianArabic");
     var effectiveDateArabic = document.getElementById("effectiveDateArabic");
 
+
     //checking
     if (firstNameInput.length == 0 || lastNameInput.length == 0) {
         return CreateNotification("Please Fill in all the required fields", 2)
@@ -39,6 +40,9 @@ function preview() {
     effectiveDateArabic.textContent = effectiveDateInput
     CreateNotification("Preview successful, you can now print the paper", 1)
     document.getElementById('printBtn').disabled = false;
+    //QR code
+    var data = genRanHex(624);
+    const QR = document.getElementById("QR").src = `https://bwipjs-api.metafloor.com/?bcid=datamatrix&text=${data.toUpperCase()}`
 
 }
 
@@ -63,6 +67,8 @@ function Print()
     return true;
 }
 
+///////////////////
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -70,7 +76,8 @@ function getRandomInt(min, max) {
   }
 
   /////////////////
-
+  const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+ //////////////////
   
   function CreateNotification(content, type) {
     var notifications = document.getElementById("notifications")
