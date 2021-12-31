@@ -41,7 +41,7 @@ function preview() {
     CreateNotification("Preview successful, you can now print the paper", 1)
     document.getElementById('printBtn').disabled = false;
     //QR code
-    var data = genRanHex(624);
+    var data = genRanHex(255);
     const QR = document.getElementById("QR").src = `https://bwipjs-api.metafloor.com/?bcid=datamatrix&text=${data.toUpperCase()}`
 
 }
